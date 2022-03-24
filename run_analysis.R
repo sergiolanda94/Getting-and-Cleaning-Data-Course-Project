@@ -5,6 +5,7 @@ library(dplyr)
 library(data.table)
 
 #Second I unzip the datasets and assign dataframes
+#Note that in the unziping I didn't used the actual name file because of my personal data
 unzip("getdata-projectfiles-UCI HAR Dataset.zip")
 
 features <- read.table("UCI HAR Dataset/features.txt", col.names = c("n","functions"))
