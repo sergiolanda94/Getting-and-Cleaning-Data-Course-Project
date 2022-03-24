@@ -28,7 +28,7 @@ MergedData <- cbind(Subject, x, y)
 CleanData <- MergedData %>% select(subject, code, contains("mean"), contains("std"))
 
 #Step 3: Use descriptive activity names to name the activities in the data set.
-CleanData$code <- activities[CleanData$code, 2]
+CleanData$code <- activity[CleanData$code, 2]
 
 #Step 4: Appropriately label the data set with descriptive variable names.
 names(CleanData)[2] = "activity"
